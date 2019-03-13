@@ -1,0 +1,34 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+// Variables
+@import "variables";
+
+// Bootstrap
+
+@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap-vue/src/index';
+
+.Restaurant{
+  .card-body{
+    padding: 10px;
+  }
+}
+.loader-box{
+  background: rgba(58, 185, 130, 0.45);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding: 6em;
+  .v-spiner{
+    display: flex;
+    height: 100%;
+  }
+  .v-ring{
+    margin: auto;
+  }
+}
