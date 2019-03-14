@@ -18,7 +18,7 @@
                             ></restaurant-component>
                         </div>
                     </div>
-                    <pagination totalRows="totalRows" currentPage="currentPage" ></pagination>
+                    <pagination :totalRows="totalRows" :currentPage="currentPage" :perPage="perPage" :hidden="totalRows <= perPage "></pagination>
                 </div>
             </div>
         </div>
@@ -48,8 +48,8 @@
                 <b-form-textarea placeholder="Enter Restaurant description" name="description"  v-model="addKeeper.description" />
             </form>
         </b-modal>
-        <div class="loader-box" >
-            <ring-loader :loading="mute" :color="'#3AB982'" :size="'95px'"></ring-loader>
+        <div class="loader-box" :hidden="mute">
+            <ring-loader  :color="'#3AB982'" :size="'95px'"></ring-loader>
         </div>
     </div>
 </template>

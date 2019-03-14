@@ -56137,7 +56137,12 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("pagination", {
-                attrs: { totalRows: "totalRows", currentPage: "currentPage" }
+                attrs: {
+                  totalRows: _vm.totalRows,
+                  currentPage: _vm.currentPage,
+                  perPage: _vm.perPage,
+                  hidden: _vm.totalRows <= _vm.perPage
+                }
               })
             ],
             1
@@ -56261,12 +56266,8 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "loader-box" },
-        [
-          _c("ring-loader", {
-            attrs: { loading: _vm.mute, color: "#3AB982", size: "95px" }
-          })
-        ],
+        { staticClass: "loader-box", attrs: { hidden: _vm.mute } },
+        [_c("ring-loader", { attrs: { color: "#3AB982", size: "95px" } })],
         1
       )
     ],
