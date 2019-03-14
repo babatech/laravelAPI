@@ -2,6 +2,9 @@ Restaurant API application with Laravel, Vue.js and Sqlite
 =======
 
 A demo project for Restaurant API with Laravel 5.5, Vue.js and sample data in Sqlite database
+* CRUD functionality for Restaurant API
+* Vue.js for frontend 
+* Sqlite for database
 
 How to run
 -------------
