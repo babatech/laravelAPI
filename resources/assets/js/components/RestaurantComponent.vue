@@ -1,6 +1,5 @@
 <template>
     <div class="card text-center Restaurant">
-        <img class="card-img-top" src="https://picsum.photos/600/300/?image=25" alt="name">
         <div class="card-body">
             <h4 class="card-title">{{ name | properCase }}</h4>
             <p class="card-text">{{ description | properCase }}</p>
