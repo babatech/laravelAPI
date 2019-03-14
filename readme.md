@@ -7,7 +7,8 @@ How to run
 -------------
 #### Pre-prerequisites ####
 ```
-PHP > 7.0
+PHP >= 7.0
+PHP Extension: OpenSSL, PDO, Mbstring, Tokenizer, XML
 NPM
 composer
 ```
